@@ -53,6 +53,9 @@ rohdaten = Rohdaten(
     type="conc"
     )
 
+# Gebe eine Beschreibung und Plot der Daten aus
+rohdaten.getInfos(f"{substrat.name}_plot")
+
 reaktion.addRohdaten( rohdaten )
 
 # Füge Reaktion dem Dokument hinzu
