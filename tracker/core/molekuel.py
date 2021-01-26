@@ -9,7 +9,3 @@ class Molekuel(ElementBase):
         
         self.smiles = smiles
         self.inchi = inchi
-        
-    def __str__(self):
-        
-        return json.dumps( { key:val for key, val in  self.__dict__.items() }, indent=4 )
