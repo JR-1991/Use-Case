@@ -6,10 +6,10 @@ class Experiment(object):
     def __init__(self, name):
         
         self.name = name
-        self.biokat = dict()
-        self.reaktionen = dict()
-        self.mols = dict()
-        self.exps = list()
+        self.biokat = {}
+        self.reaktionen = {}
+        self.mols = {}
+        self.exps = []
     
     def addExp(self, experimentator):
         self.exps += [experimentator]

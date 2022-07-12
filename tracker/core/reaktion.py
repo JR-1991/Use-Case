@@ -8,10 +8,10 @@ class Reaktion(object):
         self.name = name
         self.temp = temp
         self.ph = ph
-        
-        self.edukte = list()
-        self.produkte = list()
-        self.biokat = list()
+
+        self.edukte = []
+        self.produkte = []
+        self.biokat = []
         
     def __addElement(self, element, stoechometrie, liste):
         liste.append( (element, stoechometrie) )
@@ -29,4 +29,4 @@ class Reaktion(object):
         self.data = data
         
     def __str__(self):
-        return { key:val for key, val in  self.__dict__.items() }
+        return dict(self.__dict__.items())
