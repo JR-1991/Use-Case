@@ -20,7 +20,7 @@ class Rohdaten(object):
         self.plotname = f'{molekuel.name}_{type}'
         
     def __str__(self):
-        return { key:val for key, val in  self.__dict__.items() }
+        return dict(self.__dict__.items())
     
     def getInfos(self, path):
         

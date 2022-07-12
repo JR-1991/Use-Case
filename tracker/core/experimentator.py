@@ -12,4 +12,4 @@ class Experimentator(object):
         
     def __str__(self):
         
-        return { key:val for key, val in  self.__dict__.items() }
+        return dict(self.__dict__.items())
